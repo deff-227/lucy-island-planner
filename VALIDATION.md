@@ -27,3 +27,10 @@ Three hidden events are conditional, skip when ineligible, cannot repeat, offer 
 ## v6 opener and new-song corrections
 
 다시! is preselected once and always first in the performed queue. Nine catalog selections complete the ten-song base. The three remaining new songs are optional (maximum two), with duplicate opener submission rejected. 도시해적 replaces the unnamed instrumental; its vocal difficulty/stamina remain zero. Rock and ballad metadata follow user corrections. The fixed opener contributes to the new-song rehearsal check. Optional tracks are inserted into matching growth/lyric/power segments, preserving the Passacaglia-to-Chameleon connection. Browser QA verifies the fixed card and three genre-labeled choices. Engine checks cover the base count, ordering, duplicate rejection and genre metadata, alongside the existing 500-route suite.
+
+## V7 challenge / live-event update
+- 15 challenge songs, including officially sourced TAEMIN Guilty, EXO Love Shot and ILLIT It’s Me.
+- 100 naturally prepared shows always contain one independent challenge and exactly three once-only live incidents, including the final crowd sing-along.
+- 500 seeded unoptimized preparation routes: 124 preparation failures (24.8%); previous V6 same harness: 317/500 (63.4%). This is a regression comparison, not a predicted human win rate.
+- Every live incident has an available zero-time, non-draining fallback, including at zero stamina and the time limit.
+- Yechan solo voice stamina stays with Yechan; Piano & Vocal rests all other member slots. Selected pose-relay songs remain unchanged; difficulty and stamina are provisional game values.
