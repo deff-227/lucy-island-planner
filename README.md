@@ -2,7 +2,7 @@
 
 Buildless, browser-local Korean fan concert planning game. Serve `dist/`.
 
-- 45 sourced catalog entries plus four concert-time new-song candidates; provisional game ratings for independent Violin/Vocal/Bass/Drums difficulty and stamina.
+- 47 catalog entries with recording references and clearly marked personal-song archive evidence plus four concert-time new-song candidates; provisional game ratings for independent Violin/Vocal/Bass/Drums difficulty and stamina.
 - Ten unique main songs, four candidates per selection, grouped by concert role. Solo/vocal stages and special performances are distinguished from regular tracks.
 - Art/Performance/Music/Technic satisfaction, budget, preparation time, rehearsal readiness, production checks, four negotiations and fictional SNS events.
 - Seeded member-specific dance challenge outcomes, with visible extra stamina costs and practice tradeoffs.
@@ -23,3 +23,7 @@ V6 fixes 다시! as the first track inside the ten-song base (nine user selectio
 V7: mandatory independent challenge stage for every setlist; 15 dance choices including Guilty, Love Shot and It’s Me. Full/point practice takes 8/4 preparation time; the no-cost pose relay retains all four selected songs with 1 stamina each. Preparation begins with 125 time, 110 budget and 50 readiness. My Warm Loneliness is a Yechan solo-vocal stage; the first member slot represents his singing, not violin playing. Run To You emphasizes Sangyeop’s vocals. Three spaced live incidents per completed main show (from five fictional scenarios) include crowd sing-along/teary members, technical surprises and comic recovery moments. At least one cost-free, non-draining response always exists.
 
 GitHub Pages serves the root of `gh-pages`; source remains in `main/dist/`. Publish updated `dist/` contents to the root of `gh-pages` when changing the site.
+
+V8: corrected the systemic Technic penalty on costume/arrangement/session/stage choices. These still cost resources and require preparation checks; ignoring technical checks still penalizes the show. Full rehearsal gives Technic +4, technical rehearsal +6, equipment check +6, and accepting Gwangil’s meeting request also raises his part readiness by 4. The preparation screen shows accumulated technical-progress gains.
+
+Personal stage selection now shows all four members (eight existing/new options). Only two tracks were added: Gwangil’s Would You Dance With Me and 안잘꼬얌. The latter uses the user’s identification and fan archive linking the original upload; the original post body was inaccessible. Domino retains a single song ID and can be staged as Wonsang solo or four-member arrangement, avoiding duplicate setlist entries. Vocal/self-accompaniment costs use the relevant member’s slot, not their usual instrument label.

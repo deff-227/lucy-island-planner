@@ -34,3 +34,9 @@ Three hidden events are conditional, skip when ineligible, cannot repeat, offer 
 - 500 seeded unoptimized preparation routes: 124 preparation failures (24.8%); previous V6 same harness: 317/500 (63.4%). This is a regression comparison, not a predicted human win rate.
 - Every live incident has an available zero-time, non-draining fallback, including at zero stamina and the time limit.
 - Yechan solo voice stamina stays with Yechan; Piano & Vocal rests all other member slots. Selected pose-relay songs remain unchanged; difficulty and stamina are provisional game values.
+
+## V8 Technic fairness and personal stages
+- Pre-patch preparation audit (1,000 seeded random routes): means Art 86.610 / Performance 81.577 / Music 92.545 / Technic 62.612. Counts below encore satisfaction threshold 75: 114 / 218 / 12 / 858.
+- Post-patch audit, same 1,000-run selection policy (route sequence changes when the Domino arrangement step appears): means 86.740 / 80.938 / 92.660 / 84.163. Counts below 75: 105 / 235 / 7 / 172. These are automated policy samples, not measured player success rates or exact paired choices.
+- Every member has personal stage choices; all personal songs can complete the main show. Solo vocal costs stay with the singer. Domino’s two arrangements share one song ID and are tested in both the event and personal slots.
+- Existing failure gates, special-stage checks, challenge failures and fatigue finales remain in effect.
