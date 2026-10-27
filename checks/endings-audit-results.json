@@ -1,0 +1,76 @@
+{
+  "method": "Paired seeds 0..1999 per policy. Mixed: seeded choice mix, no final corrections. Prepared: fixed economical rehearsal policy across all four concepts, no final corrections. Both: full-length main stages, incident option 0 with free fallback, rest only if needed; uniformly seeded target 0..5 encore songs, uniformly selected playable tracks, 50% accept fatigue return. These are policy frequencies, not measured human probabilities.",
+  "before": {
+    "mixed": {
+      "runs": 2000,
+      "counts": {
+        "unready": 596,
+        "good": 64,
+        "challenge": 48,
+        "endless": 253,
+        "team": 778,
+        "return": 48,
+        "warm": 28,
+        "fire": 57,
+        "shore": 47,
+        "century": 50,
+        "right": 31
+      },
+      "hiddenPercent": 62.75,
+      "shadow": {
+        "team": 408,
+        "challenge": 24
+      }
+    },
+    "prepared": {
+      "runs": 2000,
+      "counts": {
+        "fire": 323,
+        "warm": 85,
+        "team": 596,
+        "good": 227,
+        "endless": 646,
+        "right": 58,
+        "century": 65
+      },
+      "hiddenPercent": 68.25,
+      "shadow": {
+        "team": 220,
+        "challenge": 0
+      }
+    }
+  },
+  "after": {
+    "mixed": {
+      "runs": 2000,
+      "counts": {
+        "unready": 596,
+        "good": 637,
+        "fire": 338,
+        "warm": 342,
+        "endless": 14,
+        "return": 26,
+        "shore": 47
+      },
+      "hiddenPercent": 4.35,
+      "shadow": {
+        "team": 0,
+        "challenge": 0
+      }
+    },
+    "prepared": {
+      "runs": 2000,
+      "counts": {
+        "fire": 494,
+        "warm": 490,
+        "good": 968,
+        "endless": 48
+      },
+      "hiddenPercent": 2.4,
+      "shadow": {
+        "team": 0,
+        "challenge": 0
+      }
+    }
+  }
+}
