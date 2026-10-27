@@ -42,3 +42,5 @@ Three hidden events are conditional, skip when ineligible, cannot repeat, offer 
 - Existing failure gates, special-stage checks, challenge failures and fatigue finales remain in effect.
 
 V9 resource units: displayed initial budget 2,021 points and preparation time 508 points. All resource cost chips and emergency rehearsal costs use the same proportional conversion. Normalized engine values remain 110/125, so affordability, endings and balance are exactly preserved. Charges equal rounded balance before minus rounded balance after; no cumulative rounding drift. Two-new-song total is displayed separately. Satisfaction/stamina remain /100 and live duration remains minutes.
+
+V10 validation: starting member satisfaction 70 each. 500 route checks and 1,000 preparation samples pass; preparation means 88.586 / 82.923 / 94.125 / 86.066. Updated the technical-neglect test to assert the unchanged -7 penalty relative to initial satisfaction. Resource-display checks pass.
