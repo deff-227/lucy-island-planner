@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const ctx={localStorage:{getItem:()=>null},document:{querySelector:()=>({innerHTML:''})}};vm.createContext(ctx);
-for(const name of ['data','engine','editorial','resources','app'])vm.runInContext(fs.readFileSync(`dist/${name}.js`,'utf8'),ctx);
+for(const name of ['data','engine','editorial','resources','hints','app'])vm.runInContext(fs.readFileSync(`dist/${name}.js`,'utf8'),ctx);
 const run=s=>vm.runInContext(s,ctx);
 assert.equal(run('resourceAmount("budget",110)'),2021);assert.equal(run('resourceAmount("time",125)'),508);
 for(const [key,base] of [['budget',110],['time',125]])for(let remaining=0;remaining<=base;remaining++)for(let cost=0;cost<=16;cost++){
