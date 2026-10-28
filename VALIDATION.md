@@ -114,3 +114,8 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Added 21세기의 어떤 날 to fan-call songs, including badge and capped audience-response action.
 - checks/challenge-v21.cjs covers all 15×4×5 reaction combinations, member variation, success/failure distinction, selective DOM update without state mutation, all solo descriptions and fan-call execution. Existing v3, solo-v17, fanlove-v15, hints, quality-v14 and keepsakes-v19 pass.
 - Browser verified four dropdown choices (Magnetic/Love Shot/Guilty/It’s Me), immediate per-member reaction changes and the four-member result report. Temporary QA fixture removed.
+
+## V22 — Sangyeop solo recommendation
+- Yechan and Wonsang hint preferences now select Run To You during Sangyeop's solo-song round. Member-specific reasons refer to his voice and sustained phrasing.
+- Priority applies after legal option validation and only to this owner/round; other recommendations retain existing scoring. Hint remains once per member and never selects a song or spends resources.
+- checks/hints.cjs passes concept/production regressions plus reversed candidate ordering, both named preferences, unavailable-song fallback, other solo owners and unchanged game state except hint records.
