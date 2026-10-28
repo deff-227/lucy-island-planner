@@ -8,7 +8,7 @@ assert.equal(Object.keys(E).length,9);
 for(const key of Object.keys(E)){let s=G.fresh('검증',1);s.phase='incident';s.incident=key;s.energy=[0,0,0,0];s.elapsed=s.limit;assert(E[key].options.some(o=>G.incidentPossible(s,o)),key+' safe fallback');}
 for(const [variant,base]of Object.entries({confetti:'mic',lightstick:'vcr',encoredance:'dancecue',camera:'ears'})){E[variant].options.forEach((o,i)=>{for(const k of ['energy','sat','audience','minutes'])assert.deepEqual(o[k],E[base].options[i][k]);assert.notEqual(o.result,E[base].options[i].result)})}
 const seen=new Set;for(let seed=0;seed<300;seed++){let s=G.fresh('검증',seed);s.phase='live';s.cursor=2;s.queue=Array(12).fill({kind:'track',id:'new-again'});G.triggerIncident(s);seen.add(s.incident);s.phase='live';s.incident=null;s.cursor=5;s.queue[4]={kind:'challenge'};G.triggerIncident(s);seen.add(s.incident)}assert.equal(seen.size,8);
-vm.runInContext("S=Game.fresh('검증',1);act('choose','concept',0)",ctx);assert(nodes['#app'].innerHTML.includes('방금의 선택'));assert(nodes['#app'].innerHTML.includes('게임 속 반응'));assert(nodes['#app'].innerHTML.includes('progressbar'));
+vm.runInContext("S=Game.fresh('검증',1);act('choose','concept',0)",ctx);assert(nodes['#app'].innerHTML.includes('방금의 선택'));assert(!nodes['#app'].innerHTML.includes('게임 속 반응'));assert(nodes['#app'].innerHTML.includes('progressbar'));
 vm.runInContext("foundEvents=[];readMemory('map')",ctx);assert(!nodes['#modalbody'].innerHTML.includes(H.map.story));
 vm.runInContext("foundEvents=['map'];readMemory('map')",ctx);assert(nodes['#modalbody'].innerHTML.includes(H.map.story));
 vm.runInContext("collection=['good'];album()",ctx);assert(nodes['#modalbody'].innerHTML.includes('엔딩 1/8'));assert(nodes['#modalbody'].innerHTML.includes('다음에 또, 이 섬에서'));

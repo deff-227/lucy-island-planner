@@ -100,3 +100,9 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Browser: stage effects off removes scene-art, on restores bloom; tired/happy stickers reflect 18 energy/90 satisfaction. 390px iframe (375px layout viewport) has scrollWidth=clientWidth=375; both ticket faces scrollWidth=clientWidth=299. Mobile poster/status arrangement checked.
 - Motion respects prefers-reduced-motion. Forecast table scroll is contained in a named keyboard-focusable region.
 - Temporary browser fixtures removed before commit/publication.
+
+## V20 — final immersion and navigation polish
+- Removed the concert archive entry points, modal implementation and extension wrapper; retained memory journal and final letters.
+- Removed meta disclaimers from member meetings, hints, feeds, incidents, letters, track notes, result notes, exported text and PNG keepsakes. Track details retain practical part difficulty, stamina modifiers, readiness, and cover/solo identification.
+- Simplified footer and journal entry. Preserved play-guide visibility on mobile after removing the first header button.
+- Passed v3 (500 routes), solo-v17, endings-v13, hints, resources, fanlove-v15, quality-v14 and keepsakes-v19; syntax/diff checks. Browser landing confirms no archive entry or disclaimer copy, journal and guide remain accessible.
