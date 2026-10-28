@@ -54,3 +54,11 @@ V12: concrete concert concepts (singalong festival, acoustic night, first-show r
 - Mixed outcome counts: unready 596, good 637, fire 338, warm 342, endless 14, return 26, shore 47; rough 0 under this completion-focused policy. Rough remains reachable by voluntary live withdrawal and low-quality outcomes, covered by branch tests.
 - Hidden automatic branches are mutually exclusive by encore count. Shore is an explicit stamina-zero return decision. Concept endings no longer suppressed by high member scores or challenge recovery.
 - Boundary tests: audience 94/95 fatigue event, audience 89/90 return, member 79/80 endless, stamina 0/positive, collection migration, concurrent moments, all prior balance/resource/hint regressions.
+
+## V14 — Concert journal quality update
+- Choice receipts show actual satisfaction, stamina, audience and resource deltas; fictional member reactions follow the largest satisfaction change. Preparation readiness is visible separately from stamina.
+- Progress strip, cue-sheet access and next-song cue improve orientation. Blue accents, paper memory cards, readable UI typography, keyboard focus and reduced-motion support preserve the island visual identity.
+- Incident pool 5 → 9: early confetti, audience light wave, challenge reprise request and drum-camera moment. Still three incidents per run including choir; alternate stories retain existing numerical trade-offs.
+- Collection cards replay unlocked ending text and hidden stories. Locked hidden pages offer qualitative clues. Replays do not mutate gameplay. Existing collection migration retained.
+- Result debrief highlights remaining preparation and low stamina. Concert note includes actual setlist, ending, audience, encore count and four member stats; downloadable as UTF-8 text with no server upload or run persistence.
+- Checks: quality-v14, v3, endings-v13, hints and resources passed. 4,000 audit routes exactly match V13 outcomes (mixed hidden 4.35%, prepared 2.40%). Browser checked live selection receipt, 390px iframe result/collection/replay/export; downloaded note bytes verified. Browser download-event listener timed out in the iframe, but the completed file was present and its contents verified. Test fixture pages removed before publication.
