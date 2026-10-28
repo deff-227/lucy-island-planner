@@ -128,3 +128,7 @@ button,input,select,.choice h3,.songcard h3,.personaltrack b,.metriclist,.resour
 @media print{header,footer,.headlinks,.keepsake-actions,.resultactions{display:none!important}.souvenir-ticket{print-color-adjust:exact}}
 
 .ticket-memories{font:10px/1.8 var(--font-ui);color:#a4c4db;margin:0 0 18px}.poster-map img{filter:grayscale(1) invert(1)}
+
+/* V20 · the last page of our voyage */
+.bottomrow{justify-content:center}.headlinks{gap:0}footer{color:#82949c;line-height:2;font:17px/1.8 'Gaegu',var(--font-ui)}footer>span{font:8px/1.8 var(--font-ui);letter-spacing:1.5px;color:#99a8ad}.headlinks button{min-height:36px}.ticket-keepsake>.fine:empty{display:none}
+.headlinks button:first-child{display:inline-flex;align-items:center}
