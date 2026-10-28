@@ -85,3 +85,9 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Removed choir-event tags from song cards; 응원법 mark only. Removed audience-demonstrated dance scenarios and replaced them with an onstage member demonstrating the move.
 - Letters: only all four final-day letters remain available; DAY1/2 data and buttons removed. Shared stage-heart excerpts retained.
 - Regression: solo-v17, v3, hints, resources, endings-v13, fanlove-v15, quality-v14 passed. Full 4,000-route audit: mixed preparation failure 30.25%, mixed hidden 5.35%; prepared hidden 2.80%. Synthetic policy frequencies only. Prepared route seed31 finishes main and qualifies for encore with energy [55,34,54,51]; natural four-encore and exhausted-encore paths still pass. Browser clicked through all member transitions and confirmed four candidates and accumulated selections. QA fixture removed before commit.
+
+## V18 — aligned cards and part-specific ratings
+- Shared grid rows align headings, part tables and buttons. Inline accessible fan-call badge. Browser: paired cards 428px high, table y=261 and button y=454 for tagged/untagged cards; no horizontal overflow.
+- Foul vocal difficulty/cost 10/10, Chameleon bass difficulty/cost 10/10. Rebalanced 14 tracks by sustained voice, fast bowing, bass riff/tapping and sustained drum rhythm. Game ratings, not physiological measurements. Existing costume, pacing, medley and fatigue modifiers remain previewed.
+- Simplified production labels, track keywords and selection action.
+- Passed v3 (500 routes and natural encore/exhaustion), solo-v17, hints, resources, fanlove-v15, endings-v13, quality-v14; JS syntax and diff checks.
