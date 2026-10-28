@@ -91,3 +91,12 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Foul vocal difficulty/cost 10/10, Chameleon bass difficulty/cost 10/10. Rebalanced 14 tracks by sustained voice, fast bowing, bass riff/tapping and sustained drum rhythm. Game ratings, not physiological measurements. Existing costume, pacing, medley and fatigue modifiers remain previewed.
 - Simplified production labels, track keywords and selection action.
 - Passed v3 (500 routes and natural encore/exhaustion), solo-v17, hints, resources, fanlove-v15, endings-v13, quality-v14; JS syntax and diff checks.
+
+## V19 — six keepsake features
+- New presentation-only keepsakes.js loaded after prior wrappers. No engine changes. Name is escaped and limited to 24 Unicode characters.
+- checks/keepsakes-v19.cjs: 100 cue projections match engine cost/duration/streak modifiers without mutating live state; live cursor/current time; result rows historical; progressive poster; HTML escaping; all eight result tickets and planned/performed distinction; scenes, sticker thresholds, locked clues and collected stamps.
+- Passed v3 500 seeded routes and natural encore/exhaustion, resources, hints, fanlove-v15, quality-v14 and endings-v13.
+- Browser: custom title updates both poster and cue book. Generated and downloaded PNG poster (1000×1400) and ticket (1440px wide), visually inspected Korean text and edge shapes. Preview restores download controls and handles map-load failure.
+- Browser: stage effects off removes scene-art, on restores bloom; tired/happy stickers reflect 18 energy/90 satisfaction. 390px iframe (375px layout viewport) has scrollWidth=clientWidth=375; both ticket faces scrollWidth=clientWidth=299. Mobile poster/status arrangement checked.
+- Motion respects prefers-reduced-motion. Forecast table scroll is contained in a named keyboard-focusable region.
+- Temporary browser fixtures removed before commit/publication.

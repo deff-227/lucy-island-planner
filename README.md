@@ -71,3 +71,10 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Removed choir-event tags from song cards; 응원법 mark only. Removed audience-demonstrated dance scenarios and replaced them with an onstage member demonstrating the move.
 - Letters: only all four final-day letters remain available; DAY1/2 data and buttons removed. Shared stage-heart excerpts retained.
 - Regression: solo-v17, v3, hints, resources, endings-v13, fanlove-v15, quality-v14 passed. Full 4,000-route audit: mixed preparation failure 30.25%, mixed hidden 5.35%; prepared hidden 2.80%. Synthetic policy frequencies only. Prepared route seed31 finishes main and qualifies for encore with energy [55,34,54,51]; natural four-encore and exhausted-encore paths still pass. Browser clicked through all member transitions and confirmed four candidates and accumulated selections. QA fixture removed before commit.
+
+### V19 — 공연을 남기는 여섯 가지 디자인
+- 콘셉트·의상·공연명으로 완성되는 포스터와 PNG 저장, 공연명 편집.
+- 실제 큐 순서(특별 연주·챌린지·신곡·연결 무대 포함), 무대별 시간·전환 메모·운영 조건에 따른 체력 계획.
+- 만족도와 체력에 반응하는 동물 스티커, 주요 곡의 꽃잎·푸른 빛·객석 불빛. 효과 끄기 및 reduced-motion 지원.
+- 사용자 제공 티켓의 남색·우표 가장자리·장식선을 참고한 엔딩 티켓 앞뒷면과 PNG 저장. 실제 연주곡과 미진행 기획곡을 구분.
+- 발견한 엔딩·숨은 장면에 섬 장소 도장이 남는 스크랩 항해 수첩. 기존 수집 데이터 유지.
