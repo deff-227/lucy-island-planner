@@ -115,3 +115,5 @@ button,input,select,.choice h3,.songcard h3,.personaltrack b,.metriclist,.resour
 .solo-card{display:flex;flex-direction:column}.solo-card>.keywordlist{min-height:45px}.solo-card>.selectsong{margin-top:auto}.solo-card>.textbtn{align-self:flex-start;margin-bottom:14px}
 @media(max-width:760px){.song-title{gap:5px;padding:10px 0}.song-title h3{font-size:19px;line-height:1.5}.fan-call-badge{font-size:8px;padding:4px 5px}.songcard .songtraits{min-height:60px}.songcard .partrow{min-height:33px}.songcard .selectsong{font-size:11px;margin-top:14px;min-height:44px}}
 @media(max-width:390px){.song-title{flex-wrap:wrap;align-content:center}.song-title h3{font-size:17px}.fan-call-badge{margin-left:auto}}
+
+.song-title{flex-wrap:wrap}.song-title>.member-hint-tag,.solo-card h3>.member-hint-tag{font-size:10px!important;margin:0!important;padding:4px 7px!important;align-self:center}
