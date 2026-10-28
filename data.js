@@ -46,7 +46,7 @@ const OPTIONAL_NEW_TRACKS=NEW_TRACKS.filter(x=>x.id!=='new-again');
 TRACKS.push({id:'fan-flower',title:'개화',group:'growth',source:'encore',diff:[8,8,7,8],cost:[7,7,6,7],minutes:4,traits:'첫 꽃·선명한 바이올린',kind:'LUCY 곡',ratingStatus:'게임용 수치'});
 TRACKS.push({id:'fan-falling',title:'낙화',group:'lyric',source:'encore',diff:[7,8,6,7],cost:[5,7,4,6],minutes:5,traits:'서정적인 가창·후반 고조',kind:'LUCY 곡',ratingStatus:'게임용 수치'});
 TRACKS.push({id:'fan-villain',title:'빌런',group:'power',source:'encore',diff:[8,8,8,8],cost:[7,7,7,7],minutes:4,traits:'강한 가창·네 파트가 함께 밀어붙이는 합주',kind:'LUCY 곡',ratingStatus:'게임용 수치'});
-const FAN_CALL_SONGS=['못 죽는 기사와 비단 요람','아니 근데 진짜','개화','EIO','내버려','뜨거','빌런'];
+const FAN_CALL_SONGS=['못 죽는 기사와 비단 요람','아니 근데 진짜','개화','EIO','내버려','뜨거','빌런','21세기의 어떤 날'];
 const FAN_CHOIR_SONGS=['개화','낙화','발아','전체관람가','나는 너야'];
 const FAN_BRIDGES=[{id:'intro',title:'INTRO',diff:[7,0,6,6],cost:[3,0,2,2],minutes:2,budget:2,time:4,position:'opening',traits:'독립 연주곡·다시! 뒤의 프롤로그'},{id:'outro',title:'OUTRO',diff:[7,0,6,6],cost:[3,0,2,2],minutes:2,budget:2,time:4,position:'closing',traits:'독립 연주곡·마지막 노래 뒤의 여운'},{id:'knowhow',title:'Intro + Knowhow',target:'Knowhow',diff:[8,0,8,7],cost:[3,0,3,2],minutes:1,budget:2,time:4,traits:'Knowhow 직전·확장 연결'},{id:'igotu',title:'Intro + I Got U',target:'I Got U',diff:[7,0,7,7],cost:[3,0,2,2],minutes:1,budget:2,time:4,traits:'I Got U 직전·확장 연결'}].map(x=>({...x,kind:'연주 연결 무대',source:'encore',ratingStatus:'사용자 제공 공연 구성 / 게임용 수치'}));
 const ALL_TRACKS=[...TRACKS,...NEW_TRACKS];const track=id=>ALL_TRACKS.find(x=>x.id===id);
@@ -101,7 +101,7 @@ const HIDDEN_EVENTS={
 };
 
 // All incidents are fictional stage situations, triggered once at spaced cue points.
-const CHALLENGE_STAGE={id:'challenge-stage',title:'아일랜드 챌린지 릴레이',group:'challenge',partLabels:['예찬 Dance','상엽 Dance','원상 Dance','광일 Dance'],diff:[0,0,0,0],cost:[0,0,0,0],minutes:3,traits:'선곡과 무관한 고정 중간 코너'};
+const CHALLENGE_STAGE={id:'challenge-stage',title:'릴레이 챌린지!',group:'challenge',partLabels:['예찬 Dance','상엽 Dance','원상 Dance','광일 Dance'],diff:[0,0,0,0],cost:[0,0,0,0],minutes:3,traits:'선곡과 무관한 고정 중간 코너'};
 const LIVE_INCIDENTS={
  mic:{badge:'긴급 이벤트…! / 마이크 체크',icon:'🎤',title:'상엽의 마이크가 잠깐 조용해졌습니다!',story:'입은 분명 움직이는데 객석에는 목소리가 안 들린다. 상엽이 마이크를 톡톡 두드리자, 옆에서 누군가 벌써 웃음을 참는다. 다음 소절까지 딱 한 번의 선택!',thought:'당황한 표정까지 화면에 잡혔다… 교체하는 시간을 공연의 일부로 만들 수 있을까?',options:[
  {title:'왈왈이, 한 소절만!',tags:['객석에게 마이크','예비 마이크 교체'],audience:4,energy:[0,4,0,0],sat:[0,2,0,2],minutes:0,result:'객석이 빈 소절을 채우는 사이 예비 마이크가 도착했다. 상엽이 엄지를 들어 보이고, 다음 소절에서 다시 합류한다.'},
