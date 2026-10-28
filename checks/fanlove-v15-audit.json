@@ -1,0 +1,35 @@
+{
+  "mixed": {
+    "runs": 2000,
+    "counts": {
+      "unready": 596,
+      "good": 616,
+      "fire": 319,
+      "warm": 342,
+      "shore": 89,
+      "return": 28,
+      "endless": 9,
+      "rough": 1
+    },
+    "hiddenPercent": 6.3,
+    "shadow": {
+      "team": 0,
+      "challenge": 0
+    }
+  },
+  "prepared": {
+    "runs": 2000,
+    "counts": {
+      "fire": 493,
+      "warm": 489,
+      "good": 982,
+      "endless": 34,
+      "shore": 2
+    },
+    "hiddenPercent": 1.8,
+    "shadow": {
+      "team": 0,
+      "challenge": 0
+    }
+  }
+}
