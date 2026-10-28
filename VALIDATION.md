@@ -106,3 +106,11 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Removed meta disclaimers from member meetings, hints, feeds, incidents, letters, track notes, result notes, exported text and PNG keepsakes. Track details retain practical part difficulty, stamina modifiers, readiness, and cover/solo identification.
 - Simplified footer and journal entry. Preserved play-guide visibility on mobile after removing the first header button.
 - Passed v3 (500 routes), solo-v17, endings-v13, hints, resources, fanlove-v15, quality-v14 and keepsakes-v19; syntax/diff checks. Browser landing confirms no archive entry or disclaimer copy, journal and guide remain accessible.
+
+## V21 — relay reactions and solo narration
+- Renamed the fixed challenge stage, selection heading and result heading to 릴레이 챌린지!; cue sheets and exported setlists use the same data title.
+- Four distinct member reactions for cute/sexy/power/groove choices, with separate preparation/success/stumble lines (48 entries). Guilty and Love Shot use sexy reactions without changing mechanical styles or costs. Select changes update only the changed member's preview; chosen lineup and actual result use the same mapping.
+- Added individually written non-lyrical stage descriptions for all 16 solo candidates in selection cards, details and live narration. Replaced technical stamina narration in solo scenes; retained numeric part information.
+- Added 21세기의 어떤 날 to fan-call songs, including badge and capped audience-response action.
+- checks/challenge-v21.cjs covers all 15×4×5 reaction combinations, member variation, success/failure distinction, selective DOM update without state mutation, all solo descriptions and fan-call execution. Existing v3, solo-v17, fanlove-v15, hints, quality-v14 and keepsakes-v19 pass.
+- Browser verified four dropdown choices (Magnetic/Love Shot/Guilty/It’s Me), immediate per-member reaction changes and the four-member result report. Temporary QA fixture removed.
