@@ -72,3 +72,6 @@ V12: concrete concert concepts (singalong festival, acoustic night, first-show r
 - Result keepsakes reflect remembered preparation and actual chosen scene. Letters accessible from collection, archive, farewell and result independent of score.
 - Checks: fanlove-v15 + v3 + endings-v13 + quality-v14 + hints + resources. New tests cover six letters, correct attribution, no imported private fiction, choir eligibility/final-song phase, bridge adjacency/no duplicate charge/refund, response cap and rejected-state immutability.
 - Synthetic 2,000 mixed + 2,000 prepared policy audit after song/catalog changes: mixed hidden 6.30%, prepared 1.80%; failure at preparation mixed 29.80%, prepared 0%. These are scripted policy frequencies, not player probabilities. Full counts: checks/fanlove-v15-audit.json.
+
+## V16 — Text letters and shared stage-heart excerpts
+Wonsang and Gwangil final-day handwritten letters transcribed into readable text with spacing/punctuation normalization; photo and original-image links removed from the player UI. The second speech is Wonsang per user confirmation. Stage speeches now appear as separate short excerpts under a shared, unnamed title, both in the reading collection and after the farewell scene. Source attribution retained only in data. No gameplay/stat changes. Rendering and anonymized excerpt assertions passed.
