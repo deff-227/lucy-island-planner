@@ -146,3 +146,10 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - One transient click-through aria-hidden container, at most two scenes; one replacement timer (1.85 seconds, or 2.6 for challenge results). Header setting reuses original effects preference; disabling clears active art, reduced-motion suppresses it, history replay does not restart it.
 - checks/cute-v26.cjs covers all effect categories, four members, escaping, scene gating, blocked choices, timer/node replacement and cleanup, settings/reduced-motion/read-only guards, unchanged saved bytes and 100 UI-vs-engine identical actions. showtime-v25 (500 routes), voyage-v23, keepsakes-v19 and challenge-v21 also pass.
 - Browser: real meeting action yields two-member high-five with pointer-events:none and aria-hidden:true; node automatically disappears. Effects off prevents emission. Four challenge result stickers fit a 375px viewport (265px wide, right edge363) without horizontal overflow. Ticket image is enabled and its stamp is appended inside the open dialog. Screenshot gallery uses the same production art; temporary fixtures and held-preview timers removed before publication.
+
+
+## V27 — 8th digital single release-live concept
+- User-provided release identity applied consistently to landing, document metadata, header/footer, opening/release choices, track classification, default show titles, poster/ticket DOM and Canvas exports, final messages and concert-note export.
+- Again! no longer described as unreleased/concert prerelease. Other optional tracks remain separate performance choices; no unprovided release date, tracklist or official artwork invented. Historical concert sources and supplied letters are retained.
+- Regression: v3 (500 routes and encore/failure boundaries), solo-v17, hints, keepsakes-v19, voyage-v23, showtime-v25 and cute-v26 pass. Gameplay numbers, IDs and local-storage schema unchanged.
+- Browser: release-live landing renders; poster and ticket PNG previews generate with the new titles/edition. Mobile landing clientWidth=scrollWidth=375. Temporary fixtures removed before publication.
