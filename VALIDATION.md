@@ -153,3 +153,9 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Again! no longer described as unreleased/concert prerelease. Other optional tracks remain separate performance choices; no unprovided release date, tracklist or official artwork invented. Historical concert sources and supplied letters are retained.
 - Regression: v3 (500 routes and encore/failure boundaries), solo-v17, hints, keepsakes-v19, voyage-v23, showtime-v25 and cute-v26 pass. Gameplay numbers, IDs and local-storage schema unchanged.
 - Browser: release-live landing renders; poster and ticket PNG previews generate with the new titles/edition. Mobile landing clientWidth=scrollWidth=375. Temporary fixtures removed before publication.
+
+
+## V28 — larger brush title and lowered note
+- Landing-only font/size, native SVG star/comet motifs and paper layout. Game state/choices/canvas exports unchanged.
+- Title font subset sourced from Google Fonts East Sea Dokdo, WOFF format (3,848 bytes), SIL OFL included. No external font dependency at runtime.
+- Browser: desktop uses Again Brush at 141.752px base, with enlarged title span. Mobile clientWidth=scrollWidth=375; note top1175.94 > image bottom1059.72, so the image is not covered. Native decorative SVGs aria-hidden. Temporary fixtures removed.

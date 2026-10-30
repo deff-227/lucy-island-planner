@@ -108,3 +108,9 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - 첫 화면·메타데이터·헤더·기획 문구·기본 공연명·포스터·티켓 및 PNG·공연 일지·결과 문구를 통일.
 - 다시!의 미발매/선공개 표기를 발매기념 고정 오프닝으로 변경. 나머지 선택곡은 싱글 수록곡으로 단정하지 않고 추가 무대로 유지.
 - 섬 지도와 파란색 디자인, 앵콜 진행, 기존 저장·기록·수집 데이터 유지.
+
+
+### V28 — 붓글씨 제목과 별빛
+- 첫 화면 제목을 East Sea Dokdo 붓글씨로 변경하고 확대. 제목에 쓰는 글자만 포함한 로컬 WOFF(3,848 bytes), SIL OFL 동봉. 출처: https://github.com/google/fonts/tree/main/ofl/eastseadokdo
+- 제공된 콘셉트 아트의 남색·연보라색·별똥별 분위기를 코드 기반 장식으로 반영.
+- 동물 메모를 지도 아래의 흐름 배치로 이동해 지도·문구를 가리지 않도록 조정.
