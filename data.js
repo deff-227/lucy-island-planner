@@ -36,11 +36,11 @@ addSolo('solo-gugoo','구구절절',3,7,6,'childish','광일 작사·작곡·가
 const PERSONAL_TRACKS=()=>SOLO_IDS_BY_MEMBER.flat().map(id=>TRACKS.find(x=>x.id===id));
 
 const NEW_TRACKS=[
- {id:'new-again',title:'다시!',genre:'오프닝 신곡',diff:[7,8,7,7],cost:[6,8,6,7],minutes:4,traits:'고정 오프닝·새로운 출발·콘서트 선공개',note:'이번 공연의 고정 오프닝으로 편성한다'},
+ {id:'new-again',title:'다시!',genre:'8th Digital Single',diff:[7,8,7,7],cost:[6,8,6,7],minutes:4,traits:'8th DS 다시!·발매기념·고정 오프닝',note:'이번 공연의 고정 오프닝으로 편성한다'},
  {id:'new-instrument',title:'도시해적',genre:'해적 모험풍 연주곡',diff:[8,0,8,8],cost:[8,0,7,8],minutes:4,traits:'모험·해적 영화풍·바이올린 × 베이스·보컬 휴식',note:'곡명과 분위기는 사용자 제공 설명 기준'},
  {id:'new-okay',title:'아마 괜찮을 너에게',genre:'발라드',diff:[6,8,6,6],cost:[4,8,4,5],minutes:5,traits:'발라드·보컬 호흡·감정의 여운',note:'장르는 사용자 제공 설명 기준'},
  {id:'new-shh',title:'쉿!',genre:'록',diff:[8,8,8,8],cost:[7,7,7,7],minutes:4,traits:'록·강한 합주·후반 에너지',note:'장르는 사용자 제공 설명 기준'}
-].map(x=>({...x,group:'new',source:'encore',kind:'콘서트 선공개곡',ratingStatus:'게임용 잠정 수치 / '+x.note}));
+].map(x=>({...x,group:'new',source:'encore',kind:x.id==='new-again'?'8th DS · 다시!':'이전 공연 선공개곡',ratingStatus:'게임용 잠정 수치 / '+x.note}));
 const OPTIONAL_NEW_TRACKS=NEW_TRACKS.filter(x=>x.id!=='new-again');
 // Song names and participation classification supplied by the user; ratings are game data.
 TRACKS.push({id:'fan-flower',title:'개화',group:'growth',source:'encore',diff:[8,8,7,8],cost:[7,7,6,7],minutes:4,traits:'첫 꽃·선명한 바이올린',kind:'LUCY 곡',ratingStatus:'게임용 수치'});

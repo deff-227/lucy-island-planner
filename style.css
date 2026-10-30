@@ -162,3 +162,6 @@ button,input,select,.choice h3,.songcard h3,.personaltrack b,.metriclist,.resour
 @media(prefers-reduced-motion:reduce){.cute-moment{display:none!important}.cute-react,.cute-pet,.cute-pet *,.cute-scene *{animation:none!important;transition:none!important}}
 
 .cute-bottle{width:40px;height:55px;vertical-align:middle}.cute-encore-notes i{white-space:nowrap;font-size:15px;padding:6px 7px}
+
+/* V27 · the new single opens a new chapter. */
+.release-edition{display:block;width:fit-content;margin:0 auto 18px;padding:8px 14px;border:1px solid #b4cede;border-radius:30px;color:#477eab;background:#edf5f7;font:600 11px/1.6 var(--font-ui);letter-spacing:.4px}.brand small{letter-spacing:1.2px}.invitation-kicker .eyebrow{letter-spacing:1.6px}@media(max-width:760px){.brand small{font-size:5px;letter-spacing:.5px}.invitation-kicker .eyebrow{font-size:8px;letter-spacing:1px}.release-edition{font-size:10px}}
