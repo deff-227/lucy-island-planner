@@ -114,3 +114,8 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - 첫 화면 제목을 East Sea Dokdo 붓글씨로 변경하고 확대. 제목에 쓰는 글자만 포함한 로컬 WOFF(3,848 bytes), SIL OFL 동봉. 출처: https://github.com/google/fonts/tree/main/ofl/eastseadokdo
 - 제공된 콘셉트 아트의 남색·연보라색·별똥별 분위기를 코드 기반 장식으로 반영.
 - 동물 메모를 지도 아래의 흐름 배치로 이동해 지도·문구를 가리지 않도록 조정.
+
+
+### V29 — 별똥별 제목과 종이색 지도
+- Black Han Sans 로컬 제목 글꼴에 기울기·푸른 광택·긴 별똥별 궤적을 적용. Google Fonts의 SIL OFL 동봉.
+- 지도 상단 남색을 제거하고 원래 종이색으로 통일. 동물 메모는 지도 안 중앙 아래에 배치하고 하단 문구 공간을 확보.

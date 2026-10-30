@@ -159,3 +159,9 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Landing-only font/size, native SVG star/comet motifs and paper layout. Game state/choices/canvas exports unchanged.
 - Title font subset sourced from Google Fonts East Sea Dokdo, WOFF format (3,848 bytes), SIL OFL included. No external font dependency at runtime.
 - Browser: desktop uses Again Brush at 141.752px base, with enlarged title span. Mobile clientWidth=scrollWidth=375; note top1175.94 > image bottom1059.72, so the image is not covered. Native decorative SVGs aria-hidden. Temporary fixtures removed.
+
+
+## V29 — comet wordmark and paper panel
+- Landing-only font/decoration/layout; Black Han Sans title subset with included SIL OFL. Source: https://github.com/google/fonts/tree/main/ofl/blackhansans
+- Native SVG trails and blue gradient lettering; removed navy header strip. Member note moved into map, lower-center, above its caption.
+- Browser desktop visual verified. Mobile clientWidth=scrollWidth=375 after clipping decorative overflow; note bottom1089.15 < caption top1101.75. Title remains readable text with aria-hidden decorative SVG. Temporary fixtures removed. Syntax and whitespace checks pass; game model untouched.
