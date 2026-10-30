@@ -189,3 +189,7 @@ button,input,select,.choice h3,.songcard h3,.personaltrack b,.metriclist,.resour
 @media(max-width:1000px) and (min-width:761px){.invitation .herotext h1.release-title{font-size:100px}.invitation .scrap-note{width:225px;bottom:100px}}
 @media(max-width:760px){.invitation .herotext h1.release-title{font-size:clamp(100px,25vw,145px);line-height:1.06;margin:19px 0 30px}.invitation .herotext h1.release-title i{width:112%;height:120%;right:-2%;top:-6%}.invitation .scrapbook{padding:29px 18px 25px 12px}.invitation .scrap-note{position:absolute;left:50%;bottom:96px;width:min(225px,76%);margin:0;padding:17px 17px 12px;transform:translateX(-50%) rotate(2deg)}.invitation .scrap-note p{font-size:18px}.invitation .note-sign{font-size:16px}.invitation .note-members{font-size:18px}.invitation .note-tape{left:30%;width:40%;height:22px;top:-10px}.invitation .mapstamp{top:65px}}
 @media(max-width:760px){.invitation .herotext{min-width:0;overflow:clip;padding-inline:4px}.invitation .herotext h1.release-title i{width:100%;right:0}.invitation .scrap-note{bottom:112px}}
+
+/* V30: keep the memo low on the map, shifted toward the right edge. */
+.invitation .scrap-note{left:63%}
+@media(max-width:760px){.invitation .scrap-note{left:60%;width:min(215px,68%)}}

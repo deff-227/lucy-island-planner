@@ -1,0 +1,6 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');const c={};vm.createContext(c);vm.runInContext(fs.readFileSync('dist/data.js','utf8')+fs.readFileSync('dist/engine.js','utf8')+';this.a={Game,FLOW,AUTUMN_SLOTS,AUTUMN_RECORDS,track}',c);const {Game:G,FLOW,AUTUMN_SLOTS:slots,AUTUMN_RECORDS:records,track}=c.a;
+assert.equal(slots.length,8);assert.equal(records.length,9);
+for(let seed=1;seed<=100;seed++){const s=G.fresh('가을 공연',seed);for(const f of FLOW.filter(f=>f.autumn!==undefined)){s.step=FLOW.indexOf(f);const a=G.candidates(s,f.group);assert.equal(a.length,4);assert.equal(new Set(a.map(x=>x.id)).size,4);assert(a.every(x=>slots[f.autumn].ids.includes(x.id)&&x.group!=='solo'));assert(G.select(s,a[seed%4].id));}assert.equal(new Set(s.set).size,s.set.length);}
+for(const r of records){assert(slots.some(x=>x.ids.includes(r[0])));const t=track(r[0]);assert(t.source);assert(t.diff.some((v,i)=>v!==t.cost[i]));}
+assert.equal(track('t16').cost[1],10);assert.equal(track('t9').cost[2],10);assert.equal(track('autumn-burn').cost[1],0);assert.equal(track('autumn-burn').cost[3],8);
+console.log('PASS: 100 autumn routes, eight four-choice pools, nine requested additions reachable, no duplicate/solo leakage, singer-specific stamina and legacy maximum costs');

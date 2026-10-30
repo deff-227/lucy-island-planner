@@ -165,3 +165,10 @@ Wonsang and Gwangil final-day handwritten letters transcribed into readable text
 - Landing-only font/decoration/layout; Black Han Sans title subset with included SIL OFL. Source: https://github.com/google/fonts/tree/main/ofl/blackhansans
 - Native SVG trails and blue gradient lettering; removed navy header strip. Member note moved into map, lower-center, above its caption.
 - Browser desktop visual verified. Mobile clientWidth=scrollWidth=375 after clipping decorative overflow; note bottom1089.15 < caption top1101.75. Title remains readable text with aria-hidden decorative SVG. Temporary fixtures removed. Syntax and whitespace checks pass; game model untouched.
+
+## V30 · 가을 발매기념 선곡
+- 메모를 지도 오른쪽 하단으로 이동. 모바일 375px 가로 넘침 없음, 메모와 하단 문구 겹침 없음.
+- 일반 선곡 8구간 × 유사 분위기 4곡, 신규 9곡 및 파트별 난이도/체력 반영. 기존 곡 ID와 개인 무대 4×4 유지.
+- 벅스 앨범 정보로 와장창, BLUE, 선잠, PANORAMA, Gatcha!, Boogie Man, FROM. 수록곡 확인.
+- 모든 checks/*.cjs 통과. autumn-v30: 100개 시드에서 후보 개수·중복·개인 무대 분리·신규곡 접근성 검증.
+- 베이스 모니터 이벤트를 베이스 난이도 7 이상 선곡에도 연결하여 계절 선곡에서 접근성 유지.

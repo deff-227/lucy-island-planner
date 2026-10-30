@@ -49,6 +49,32 @@ TRACKS.push({id:'fan-villain',title:'빌런',group:'power',source:'encore',diff:
 const FAN_CALL_SONGS=['못 죽는 기사와 비단 요람','아니 근데 진짜','개화','EIO','내버려','뜨거','빌런','21세기의 어떤 날'];
 const FAN_CHOIR_SONGS=['개화','낙화','발아','전체관람가','나는 너야'];
 const FAN_BRIDGES=[{id:'intro',title:'INTRO',diff:[7,0,6,6],cost:[3,0,2,2],minutes:2,budget:2,time:4,position:'opening',traits:'독립 연주곡·다시! 뒤의 프롤로그'},{id:'outro',title:'OUTRO',diff:[7,0,6,6],cost:[3,0,2,2],minutes:2,budget:2,time:4,position:'closing',traits:'독립 연주곡·마지막 노래 뒤의 여운'},{id:'knowhow',title:'Intro + Knowhow',target:'Knowhow',diff:[8,0,8,7],cost:[3,0,3,2],minutes:1,budget:2,time:4,traits:'Knowhow 직전·확장 연결'},{id:'igotu',title:'Intro + I Got U',target:'I Got U',diff:[7,0,7,7],cost:[3,0,2,2],minutes:1,budget:2,time:4,traits:'I Got U 직전·확장 연결'}].map(x=>({...x,kind:'연주 연결 무대',source:'encore',ratingStatus:'사용자 제공 공연 구성 / 게임용 수치'}));
+// Autumn release-live candidates. Stable named IDs preserve existing recordings.
+SOURCES.smash=['와장창 · 발매·참여 정보','https://music.bugs.co.kr/album/20715049'];
+const AUTUMN_RECORDS=[
+ ['autumn-christmas','Over The Christmas','lyric','boogie',[8,8,6,8],[6,7,4,7],5,'겨울의 온기·스트링 겹침·스네어 리듬'],
+ ['autumn-unknown','결국 아무것도 알 수 없었지만','lyric','blue',[6,8,5,6],[4,7,3,4],5,'절제된 도입·긴 가창 호흡·담담한 여운'],
+ ['autumn-reasons','미워하지 않아도 될 수많은 이유','lyric','smash',[6,8,5,6],[4,7,3,4],4,'따뜻한 선율·세밀한 강약·보컬 호흡'],
+ ['autumn-more','내가 더','power','smash',[8,9,7,8],[6,9,5,7],4,'몰아치는 보컬·록 사운드·후반 고조'],
+ ['autumn-burn','남김없이','lyric','from',[6,0,5,8],[4,0,3,8],4,'광일 가창 중심·잔잔한 시작·커지는 밴드 합주'],
+ ['autumn-farther','Farther and Farther','growth','snooze',[7,7,6,7],[5,6,4,5],4,'밤의 기억·반복되는 선율·점층적인 합주'],
+ ['autumn-straight','Straight Line','growth','panorama',[7,7,7,7],[5,6,5,6],4,'앞으로 나아가는 리듬·선명한 선율·밴드 호흡'],
+ ['autumn-bleu','bleu','lyric','smash',[5,9,5,5],[3,8,3,4],4,'상엽 가창 중심·감정의 밀도·밴드 반주'],
+ ['autumn-one','One by One','bright','gatcha',[6,7,7,6],[4,6,5,4],4,'부드러운 베이스·가벼운 스트링·설레는 리듬']
+];
+AUTUMN_RECORDS.forEach(r=>TRACKS.push({id:r[0],title:r[1],group:r[2],source:r[3],diff:r[4],cost:r[5],minutes:r[6],traits:r[7],kind:'LUCY 발매곡',ratingStatus:'게임용 수치'}));
+TRACKS.find(x=>x.id==='autumn-burn').partLabels=['Violin','상엽 휴식','Bass','광일 Vocal / Drums'];
+// Each slot has four comparable choices, rather than a random sample of every song.
+const AUTUMN_SLOTS=[
+ {title:'다시 만난 설렘',note:'가볍고 선명한 밴드 사운드',thought:'다시!로 문을 연 뒤, 한 걸음 가까워지는 노래를 잇자.',ids:['autumn-one','t1','t4','t5']},
+ {title:'가을바람을 따라',note:'추억과 새 출발을 잇는 리듬',thought:'같은 속도로만 달리지 말고, 선율을 따라 걷는 구간을 만들어보자.',ids:['t14','autumn-straight','autumn-farther','t10']},
+ {title:'잠깐, 장난쳐도 될까?',note:'웃음과 티키타카',thought:'조금 쑥스러워도 괜찮다. 챌린지 전에는 같이 웃을 시간을 남기자.',ids:['t29','t30','t31','t6']},
+ {title:'조금 더 따뜻하게',note:'늦가을의 온기와 위로',thought:'쌀쌀해진 날씨에 어울리는 온기를 남기자. 겨울 노래를 조금 일찍 꺼내도 좋겠다.',ids:['t18','autumn-reasons','autumn-christmas','autumn-bleu']},
+ {title:'깊어지는 가을밤',note:'긴 호흡과 감정의 고조',thought:'잔잔한 시작이 쉬운 곡이라는 뜻은 아니다. 끝까지 부를 호흡을 남겨두자.',ids:['t7','fan-falling','autumn-unknown','t17']},
+ {title:'남은 마음을 터뜨리면',note:'감정이 커지는 밴드 사운드',thought:'앞에서 쌓은 감정을 크게 풀어보자. 가창 부담이 누구에게 몰리는지도 확인하자.',ids:['autumn-more','autumn-burn','t16','t15']},
+ {title:'밤공기를 가르는 합주',note:'강렬한 연주와 반전',thought:'조용했던 객석을 한 번 더 깨우자. 무대가 커지는 만큼 체력도 남아 있어야 한다.',ids:['t34','t35','t33','fan-villain']},
+ {title:'다시 만날 마지막 장면',note:'끝인사와 오래 남는 여운',thought:'마지막 노래가 끝나도 오늘을 떠올릴 수 있도록. 어떤 마음으로 인사할까?',ids:['t24','t25','t26','closing-hold']}
+];
 const ALL_TRACKS=[...TRACKS,...NEW_TRACKS];const track=id=>ALL_TRACKS.find(x=>x.id===id);
 const GROUPS={bright:['첫 파도가 닿는 곳','밝은 시작과 함께 부르는 구간'],growth:['섬의 길을 따라','연주·편곡의 색을 보여줄 구간'],lyric:['한 걸음 쉬어가는 밤','가창과 감정의 호흡을 남길 구간'],cute:['우리끼리 작은 축제','귀여운 이벤트·티키타카 무대'],solo:['네 사람, 각자의 무대','멤버별 개인 무대 · 한 곡 선택'],power:['밤의 파도를 넘어','강렬한 합주와 후반 에너지'],closing:['섬에 남길 마지막 노래','마지막 곡의 위치를 고르는 회의']};
 const SPECIALS=[{id:'pass',title:'파사칼리아 → 카멜레온',source:'pass',desc:'공식 ISLAND 클립을 참고한 바이올린·베이스 합동 Intro. 카멜레온을 선곡하면 그 앞에 연결한다.',diff:[10,0,10,0],cost:[9,0,9,0],budget:8,time:10,need:72},{id:'caprice',title:'카프리스 24번',source:'caprice',desc:'바이올린과 베이스의 긴장감으로 여는 특별 무대. 두 파트의 합을 맞출 시간이 필요하다.',diff:[10,0,9,0],cost:[10,0,8,0],budget:7,time:9,need:72},{id:'kpop',title:'K-pop Medley',source:'line',desc:'Golden·Whiplash 등의 선율을 악기로 재해석한 이전 공연에서 착안한다. 연결·음색 Cue를 준비한다.',diff:[9,0,9,0],cost:[8,0,8,0],budget:9,time:10,need:70},{id:'blind',title:'Boogie Man · 안대 퍼포먼스',source:'blind',desc:'이전 무대의 안대 연주를 참고한다. 고정 동선과 전용 리허설이 필요하다. 본공연에 없다면 Boogie Man 무대가 추가된다.',diff:[10,0,0,0],cost:[5,0,0,0],budget:6,time:8,need:74},{id:'none',title:'이번 섬의 합주에 집중',desc:'특별 연주는 더하지 않고 기존 곡의 흐름과 네 사람의 합을 다듬는다.',diff:[0,0,0,0],cost:[0,0,0,0],budget:0,time:0,need:0}];
@@ -93,6 +119,7 @@ cute:{label:'PROP MEETING / LITTLE FESTIVAL',title:'노래 사이에, 조금 장
 requests:{label:'SNS / YOUR AUDIENCE',title:'“길게 보고 싶지만, 무리하지는 말아줘.”',body:'귀여운 무대를 더 보고 싶은 사람과 연주를 오래 듣고 싶은 사람이 함께 있습니다. 어느 한 댓글이 전체 관객의 정답은 아닙니다.',posts:['잠깨 챌린지 한 번만 더 보고 싶다… 새 버전도 궁금해.','연주 길게 듣고 싶은데 멤버들 숨 돌릴 시간도 있으면 좋겠어.'],choices:[['준비한 구간을 관객 참여로 넓힌다','시간 −5 · 예산 −2 / 관객 기대 상승, 전환 점검 필요'],['짧은 콜앤리스폰스만 남긴다','시간 −2 / 작은 교감과 안정성을 택한다'],['지금 구성의 이유를 짧게 전한다','추가 자원 없음 / 일부 기대는 낮아지지만 흐름은 지킨다']],results:['관객이 함께 들어올 자리를 만듭니다. 공연 시간이 무한히 늘지는 않도록 확인합니다.','노래 사이에 짧은 응답을 주고받는 구간을 남깁니다.','모든 요청을 넣지 않고, 이번 공연이 지키려는 흐름을 선택합니다.']},
 technical:{label:'REHEARSAL REPORT / LIGHTHOUSE',title:'불빛은 예쁜데, 다음 Cue가 겹칩니다.',body:'큰 효과와 좋은 무대는 같은 말이 아닙니다. 남은 미점검 항목을 확인하고, 무엇을 지킬지 정해야 합니다.',posts:[],choices:[['시간을 써서 전환과 장비를 점검한다','예산 −4 · 시간 −8 / 기술·동선 항목 해결, 신곡 합주는 별도'],['큰 조명·소품을 줄이고 연주를 보여준다','추가 자원 없음 / Art 일부 감소, 관련 Cue 부담 감소'],['계획을 유지하고 다음 리허설에 맡긴다','추가 자원 없음 / Technic −7, 미점검 항목은 남는다']],results:['화려함을 유지하기 위해 필요한 기술 점검을 마쳤습니다.','일부 효과를 덜고 지금 연주하는 사람을 가까이 보여주기로 했습니다.','전환의 불안이 아직 남습니다. 최종 리허설에서 실제로 해결해야 합니다.']}}
 
+FLOW.filter(x=>x.type==='song'&&x.group!=='solo').forEach((x,i)=>{x.autumn=i});
 const MAIN_SONG_COUNT=1+FLOW.filter(x=>x.type==='song').length;
 const HIDDEN_EVENTS={
  map:{title:'지도 뒤의 메모',story:'리허설실에 두고 온 지도를 뒤집자, 작은 화살표가 보인다. 처음의 선율에서 마지막의 선율로 이어지는 표시. 이번 공연의 이야기가 비로소 한 장에 담긴 것 같다.',thought:'팬들이 이 연결을 알아볼까… 알아채는 사람에게만 남을 작은 단서를 넣어도 좋겠다.',options:[['작은 단서',['시작과 끝','선율의 연결'],['시간 −2','Art +2','Music +1','흐름 +4']],['우리끼리 간직',['공연의 약속','추가 연출 없음'],['전원 만족도 +1','흐름 +2']]]},
