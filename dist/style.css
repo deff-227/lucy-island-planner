@@ -204,3 +204,19 @@ button,input,select,.choice h3,.songcard h3,.personaltrack b,.metriclist,.resour
 
 @media(min-width:761px){.invitation .map-bottom .mapquote{transform:translateY(-14px)}}
 @media(max-width:760px){.invitation .map-bottom .mapquote{transform:translateY(-7px)}}
+
+/* V32: clear hierarchy, compact secondary tools and readable choice effects. */
+.poster-folder{margin:20px 0 0;border:1px solid #c8d6df;border-radius:13px;background:#f8f8f1;overflow:hidden}
+.poster-folder>summary,.challenge-recap>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:16px 18px;color:#365f7d;font-weight:650}
+.poster-folder>summary::-webkit-details-marker,.challenge-recap>summary::-webkit-details-marker{display:none}
+.poster-folder>summary::after,.challenge-recap>summary::after{content:'＋';margin-left:auto;font-size:17px;font-weight:400}
+.poster-folder[open]>summary::after,.challenge-recap[open]>summary::after{content:'−'}
+.poster-folder>summary{flex-wrap:wrap}.poster-folder>summary small{display:block;max-width:100%;font-size:11px;font-weight:450;color:#718794;overflow-wrap:anywhere}
+.poster-folder .poster-workshop{margin:0;border:0;border-top:1px dashed #c8d6df;border-radius:0;background:transparent}
+.challenge-recap{margin-top:22px;border:1px solid #c8d6df;border-radius:12px;background:#f7f9f7}
+.challenge-recap>summary small{font-size:11px;color:#7b8f9a;font-weight:450}.challenge-recap .challengereport{margin:0;border:0;border-top:1px dashed #c8d6df;border-radius:0}
+.resultgrid>.reportpaper:only-child{grid-column:1/-1}
+.guide-lead{color:#6e8491;font-size:14px;line-height:1.8}.guide-facts{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px;padding:18px 0 24px;border-bottom:1px solid #d2dde3}.guide-facts span{font-size:11px;line-height:1.7;color:#7c8a91}.guide-facts b{display:block;font-size:22px;color:#35678c;font-weight:700}.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-top:24px}.guide-grid section{padding:0 0 18px;border-bottom:1px solid #d9e1e4}.guide-grid small{font-size:9px;letter-spacing:1px;color:#7397b1}.guide-grid h3{font:650 17px var(--font-ui);margin:9px 0 12px;color:#315c7a}.guide-grid p{font-size:12px;line-height:1.85;color:#6a777e;margin:8px 0}
+.choice{border-color:#d4d6cb;transition:border-color .18s,box-shadow .18s,transform .18s}.choice:not(:disabled):hover{border-color:#7aa7c7;box-shadow:0 7px 20px #345f7d0c;transform:translateY(-2px)}.choice .choicemeta{margin-top:auto;padding-top:17px;border-top:1px solid #d8ded740}.choice .metriclist{gap:6px}.choice .metriclist span{line-height:1.5}.choice .unavailable{font-size:10px;color:#9c7668}.sectionheading>p{max-width:64ch;line-height:1.8}.direction-head b{white-space:nowrap}.ticket-edition{line-height:1.6;overflow-wrap:anywhere}.release-edition{line-height:1.7}
+.invitation .maplabel small{line-height:1.6;letter-spacing:1px}.brand small{line-height:1.5}.continue-area:empty{display:none}
+@media(max-width:760px){.guide-grid{grid-template-columns:1fr;gap:14px}.guide-facts{gap:7px}.guide-facts b{font-size:19px}.guide-facts span{font-size:10px}.poster-folder>summary{padding:13px 15px}.poster-folder>summary small{font-size:10px}.challenge-recap>summary{padding:15px;font-size:13px}.sectionheading>p{font-size:12px}.release-edition{font-size:11px;letter-spacing:.5px}.ticket-edition{font-size:10px;letter-spacing:.8px}}
