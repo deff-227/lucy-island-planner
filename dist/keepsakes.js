@@ -44,3 +44,8 @@ async function openKeepsake(kind){if(!S||!['poster','ticket'].includes(kind)||ki
 function saveKeepsake(){if(!keepsakeImage)return;const a=document.createElement('a');a.href=keepsakeImage.url;a.download=keepsakeImage.name;a.click()}
 // The compact guide in app.js covers keepsakes and export controls.
 render();
+
+// Move the existing disclosure, preserving its state across viewport changes.
+function placeConcertPoster(){if(typeof window.matchMedia!=='function')return;const poster=document.querySelector('.poster-folder'),target=document.querySelector(window.matchMedia('(max-width:760px)').matches?'.workspace':'.journeyside');if(poster&&target&&poster.parentElement!==target)target.appendChild(poster)}
+if(typeof window.matchMedia==='function')window.matchMedia('(max-width:760px)').addEventListener('change',placeConcertPoster);
+placeConcertPoster();
